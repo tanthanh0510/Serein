@@ -1,0 +1,289 @@
+header {
+    height: 64px;
+}
+.img-logo-serein{
+    width: 189px;
+    height: 32px;
+    margin-top: 16px;
+}
+
+.barSearch {
+    margin-top: 16px;
+}
+
+.filterAllCourse {
+    width: 110px;
+    border-top-right-radius: none !important;
+    border-bottom-right-radius: none !important;
+}
+
+.txtSearch {
+    width: 564px;
+}
+
+.btnSearch {
+    width: 40px;
+    height: 38px;
+}
+
+header nav {
+    margin-top: 15px;
+}
+
+header nav a{
+    color: black;
+    height: 40px;
+    text-decoration: none;
+}
+
+header nav a.active{
+    color: #AA00FF !important;
+    border-bottom: 3px solid #AA00FF;
+}
+
+.btnDN {
+    margin-left: 15px;
+    height: 38px;
+    border-radius: 24px;
+    background-color: #AA00FF;
+    width: 80px;
+    border: none;
+    outline: none;
+}
+
+.btnDN a {
+    text-decoration: none;
+}
+
+.btnDN:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+/* nav */
+.navbarMenu {
+    background-color: #AA00FF;
+}
+
+.navbarMenu a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbarMenu ul {
+    margin-left: 55px;
+}
+
+.navbarMenu ul li {
+    margin-top: 10px;
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+
+.navbarMenu a:hover{
+    color: lightgray;
+}
+/* Hover Dropdown */
+.dropdown a{
+    color: black;
+    text-decoration: none;
+}
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+    top: 45px;
+}
+
+.submenu{
+    margin-left: 190px;
+    width: 400px;
+}
+
+.dropdown-item {
+    cursor: pointer;
+}
+
+.dropdown>.dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+      pointer-events: none;
+}
+
+.submenu {
+    display: none;
+}
+
+.dropdown-item:hover .submenu {
+    display: block;
+}
+
+.titleProgram {
+    background-color: #AA00FF;
+    height: 40px;
+    padding-top: 10px;
+}
+
+.mainProgram img{
+    max-width: 24px;
+    max-height: 24px;
+}
+
+
+/* Slide show */
+.slideShow {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.cardIntro {
+    height: 100px;
+    padding: 15px !important;
+    margin: 3px;
+    max-width: 32%;
+}
+
+.allCardIntro {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    position: relative;
+    bottom: 44px;
+}
+
+.cardIntro a{
+    color: black;
+    width: 100%;
+    display: inline-flex;
+    text-decoration: none;
+}
+
+.cardIntro a * {
+    padding-top: 7px;
+}
+
+.jobs-text {
+    width: 60%;
+    margin-left: 10px;
+}
+.jobs-start {
+    padding-right: 15px;
+    width: 40%;
+    margin-top: 10px;
+}
+
+#allCategory a{
+    color: black;
+    text-decoration: none;
+    border-radius: 0px;
+}
+
+#allCategory a.active {
+    color: #AA00FF;
+    background-color: white;
+    border-bottom: 3px solid #AA00FF;
+}
+
+#lineCardAll > div {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.navFilterCard {
+    margin-left: 10px;
+}
+
+.slick-prev:before {
+    color: lightgray;
+    font-size: 50px;
+    margin-left: -30px;
+}
+
+.slick-next:before {
+    color: lightgray;
+    font-size: 50px;
+}
+
+.slick-slide {
+    margin: 5px;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    height: 370px;
+}
+
+.infoCard {
+    margin-top: 15px;
+    height: 100%;
+    cursor: pointer;
+}
+
+.infoCard:hover {
+    background-color: lightgray;
+}
+
+.infoCard > img {
+    height: 35%;
+}
+
+.titleCourse{
+    height: 18%;
+}
+
+.authorCourse{
+    height: 18%;
+}
+
+.ratingCourse {
+    height: 10%;
+}
+
+.feeCourse {
+    height: 10%;
+}
+
+/* Review HomePage */
+.studentReview {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.infoReview {
+    height: 400px;
+    padding: 15px;
+}
+
+.infoReview img {
+    max-width: 20%;
+    max-height: 20%;
+    margin-left: 15px;
+}
+
+#collabrator {
+    background-color: #AA00FF;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.collabratorLogo {
+    max-height: 100px;
+    max-width: 200px;
+    margin-top: 10px;
+    /* margin-left: 30px; */
+    margin-right: 80px;
+}
+
+/* footer */
+#row-footer {
+    background-color: #333333;
+}
+
+#row-footer img {
+    margin: 20px;
+}
+
+#row-footer span {
+    color: #AA00FF;
+}
+
+#row-footer p {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    background-color: #333333;
+}

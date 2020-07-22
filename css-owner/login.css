@@ -1,0 +1,64 @@
+body{
+	margin: 0 auto;
+	padding: 0;
+	font-family: 'Exo 2';
+	box-sizing: border-box;
+}
+header {
+    height: 64px;
+}
+#bgDN{
+	background-image: url('../img/background.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+#khungDN{
+	margin-top: 100px;
+	margin-bottom: 100px;
+	border: 0.5px solid white;
+	border-radius: 10px 10px 10px 10px;
+	background-color: white;
+	margin-left: auto; 
+	margin-right: auto;
+}
+#textLogIn{
+	color: #AA00FF;
+	font-family: 'Exo 2';
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 29px;
+	padding-top: 48px;
+	padding-bottom: 30px;
+	border-bottom: 1px solid #AA00FF;
+}
+#formDN{
+	margin-top: 20px;
+}
+a{
+	color: #AA00FF;
+	text-decoration: none;
+}
+p{
+	text-align: center;
+}
+#btnDN{
+	background-color: #AA00FF;
+	color: white;
+}
+#row-footer {
+    background-color: #333333;
+}
+#row-footer img {
+    margin: 20px;
+}
+
+#row-footer span {
+    color: #AA00FF;
+}
+
+#row-footer p {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    background-color: #333333;
+}

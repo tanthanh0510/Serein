@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../slick/slick.css">
+	<link rel="stylesheet" href="../slick/slick-theme.css">
+    <link rel="stylesheet" href="../css-owner/cssHomePage.css">
+    <link rel="stylesheet" type="text/css" href="../fontawesome-free-5.8.2-web/css/all.min.css">
+    <link rel="shortcut icon" href="../img/logo.png">
+    <!-- JQuery -->
+    <script src="../jquery/jquery-3.5.1.min.js"></script>
+    <script src="../slick/slick.min.js"></script>
+    <!-- Popper -->
+	<script src="../js/popper.min.js"></script>
+    <!-- JS -->
+    <script src="../js/bootstrap.js"></script>
+    <script src="../data/data.js"></script>
+</head>
+<body>
+    <div class="container-fluid" style="padding-left: 0 !important;padding-right: 0 !important;">
+        <header class="row shadow">
+            <a href="../html/HomePageSereinSignIn.html" class="col-xl-2 col-sm-2 col-md-2 col-lg-2">
+                <img src="../img/logo.png" alt="Serein" class="img-fluid img-logo-serein" style="margin-left: 15%;">
+            </a>   
+            <div class="col-xl-8 col-sm-6 col-md-6 col-lg-8 input-group barSearch">
+                <div class="input-group-prepend">
+                    <div class="dropdown">
+                        <button style="color: #AA00FF;" class="font-weight-bold bg-white dropdown-toggle btn btn-light filterAllCourse border border-dark" type="button" data-toggle="dropdown" id="dropdownType" aria-haspopup="true" aria-expanded="false">
+                            Type
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownType">
+                            <li class="dropdown-item">
+                                <a href="#" class="font-weight-bold" style="text-decoration: none; color: #AA00FF;">All</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="#" class="font-weight-bold" style="text-decoration: none; color: #AA00FF;">Program</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="#" class="font-weight-bold" style="text-decoration: none; color: #AA00FF;">Course</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <input type="text" placeholder="Search" class="form-control txtSearch border border-top border-bottom border-dark" aria-label="seach">
+                <div class="input-group-append">
+                    <button class="bg-white input-group-text btnSearch border border-dark">
+                        <a href="../html/searchSereinSignIn.html"><i class="fas fa-search" style="outline: none; color: #AA00FF;"></i></a>
+                    </button>
+                </div>
+            </div>
+            <div class="col-xl-2 col-sm-4 col-md-4 col-lg-2">
+                <nav class="nav">
+                    <div class="nav-item">
+                        <a href="../html/HomePageSereinSignIn.html" class="nav-link active h6">Home</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="../html/aboutUsSignIn.html" class="nav-link h6">Abouts</a>
+                    </div>
+                    <button class="btnDN shadow">
+                        <a href="../html/AccountUser.html" class="text-white" style="text-decoration: none; outline: none;">
+                            Duy
+                            <span>
+                                <i class="fa fa-user-alt"></i>
+                            </span>
+                        </a>
+                    </button>
+                </nav>
+            </div>
+        </header>
+        <nav class="row shadow navbarMenu text-white">
+            <div class="navbar navbar-expand col-xl-12 col-sm-12 col-md-12 col-lg-12 d-inline-block">
+                <ul class="navbar-nav">
+                    <script>
+                        var course = ["Data Science", "Data Engineer", "Data Analytics", "Business Intelligence", "Business Analytics", "Data Visualization", "Big Data", "Project Manager", "Cloud Computing", "Software Engineer", "Software Tester"]
+                        for (var index = 0; index < course.length; index++) {
+                            $(".navbar-nav").append('<li class="nav-item"><a href="../html/searchSereinSignIn.html">' + course[index] + '</a></li>')
+                        }
+                    </script>
+                </ul>
+            </div>
+        </nav>
+        <section class="row">
+            <div class="col-xl-12 col-sm-12 col-md-12 col-lg-12 slideShow">
+                <div id="carousel-serein-course" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carousel-serein-course" data-slide-to="0" class="active"></li>
+                      <li data-target="#carousel-serein-course" data-slide-to="1"></li>
+                      <li data-target="#carousel-serein-course" data-slide-to="2"></li>
+                      <li data-target="#carousel-serein-course" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img class="d-block w-100" src="../img/course1.jpg" alt="First slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="../img/course2.jpg" alt="Second slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="../img/course3.jpg" alt="Third slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="../img/course4.jpg" alt="Third slide">
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel-serein-course" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel-serein-course" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="row">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12 col-sm-12 col-md-12 col-lg-12 allCardIntro">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-xl-4 col-sm-4 col-md-4 col-lg-12 shadow cardIntro bg-white">
+                                    <a href="../html/searchSerein.html" class="justify-content-center">
+                                        <span class="jobs-text">BECOME A
+                                            <br>
+                                            <b>DEVOPS ENGINEER</b>
+                                        </span>
+                                        <span class="jobs-start text-right">
+                                            START
+                                            <i class="fa fa-angle-right"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="col-xl-4 col-sm-4 col-md-4 col-lg-12 shadow cardIntro bg-white">
+                                    <a href="../html/searchSerein.html">
+                                        <span class="jobs-text">BECOME A
+                                            <br>
+                                            <b>BIG DATA</b>
+                                        </span>
+                                        <span class="jobs-start text-right">
+                                            START
+                                            <i class="fa fa-angle-right"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="col-xl-4 col-sm-4 col-md-4 col-lg-12 shadow cardIntro bg-white">
+                                    <a href="../html/searchSerein.html">
+                                        <span class="jobs-text">BECOME A
+                                            <br>
+                                            <b>DATA SCIENTIST</b>
+                                        </span>
+                                        <span class="jobs-start text-right">
+                                            START
+                                            <i class="fa fa-angle-right"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="newCourse">
+            <div class="container">
+                <div class="row">
+                    <h2 class="col-xl-12 col-sm-12 col-md-12 col-lg-12 text-left">New Course</h2>
+                </div>
+                <div class="row">
+                    <ul class="navFilterCard nav nav-pills mb-3 col-xl-12 col-sm-12 col-md-12 col-lg-12" id="allCategory" role="tablist">
+                        <li class="nav-item">
+                          <a class="nav-link active" id="filterAll" data-toggle="pill" href="#lineCardAll" role="tab" aria-controls="lineCardAll" aria-selected="true"><span class="font-weight-bold text-left">All</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" id="filterProgram" data-toggle="pill" href="#lineCardProgram" role="tab" aria-controls="lineCardProgram" aria-selected="false"><span class="font-weight-bold text-left">Program</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" id="filterCourse" data-toggle="pill" href="#lineCardCourse" role="tab" aria-controls="lineCardCourse" aria-selected="false"><span class="font-weight-bold text-left">Course</span></a>
+                        </li>
+                      </ul>
+                </div>
+                <div class="row">
+                    <div class="navFilterCard tab-content col-xl-12 col-sm-12 col-md-12 col-lg-12" id="pills-tabContent">
+                        <div class="tab-pane fade show active col-xl-12 col-sm-12 col-md-12 col-lg-12" id="lineCardAll" role="tabpanel" aria-labelledby="filterAll">
+                            <div class="slider slider-nav"></div>
+                            <script>
+                                for(var i = 0; i < 10; i++){
+                                    $(".slider-nav").append('<div class="col-xl-3 col-sm-3 col-md-3 col-lg-3 bg-white shadow rounded" style="outline: none;"><a href="../html/DetailCourse2.html" style="text-decoration: none; color: black"><div class="infoCard"><img src="../img/imgInfoCard'+ String(i+1) + '.jpg" alt="Course" class="col-xl-12 col-sm-12 col-md-12 col-lg-12 img-fluid"><p class="col-xl-12 col-sm-12 col-md-12 col-lg-12 font-weight-bold titleCourse">'+ dataCourseNew[i].title + '</p><p class="col-xl-12 col-sm-12 col-md-12 col-lg-12 text-muted h6 authorCourse">' + data[i].author +'</p><div class="col-xl-12 col-sm-12 col-md-12 col-lg-12 ratingCourse text-warning"><span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><span class="rating font-weight-bold">' + data[i].quality + '</span><span class="totalRating text-muted h6"> (' + data[i].member_ratting + ') </span></span></div><p class="col-xl-12 col-sm-12 col-md-12 col-lg-12 text-right font-weight-bold h4 feeCourse">' + data[i].fee + '</p></div></a></div>')
+                                }
+                            </script>
+                            <script>
+                                $(document).ready(function(){
+                                    $('.slider-nav').slick({
+                                        infinite: true,
+                                        slidesToShow: 4,
+                                        slidesToScroll: 2,
+                                        dots: true
+                                    });
+                                });
+                            </script>
+                        </div>
+                        <div class="tab-pane fade col-xl-12 col-sm-12 col-md-12 col-lg-12" id="lineCardProgram" role="tabpanel" aria-labelledby="filterProgram">
+                            <div class="slider slider-nav-program"></div>
+                            <script>
+                                for(var i = 0; i < dataProgramNew.length; i++){
+                                    $(".slider-nav-program").append('<div class="col-xl-3 col-sm-3 col-md-3 col-lg-3 shadow rounded"><a href="../html/DetailCourse2.html" style="text-decoration: none; color: black"><div class="infoCard"><img src="../img/imgProgramNew'+ String(i+1) + '.jpg" alt="Course" class="col-xl-12 col-sm-12 col-md-12 col-lg-12 img-fluid"><p class="col-xl-12 col-sm-12 col-md-12 col-lg-12 font-weight-bold titleCourse">'+ dataProgramNew[i].title + '</p><p class="col-xl-12 col-sm-12 col-md-12 col-lg-12 text-muted h6 authorCourse">' + dataProgramNew[i].author +'</p><div class="col-xl-12 col-sm-12 col-md-12 col-lg-12 ratingCourse text-warning"><span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><span class="rating font-weight-bold">' + dataProgramNew[i].quality + '</span><span class="totalRating text-muted h6"> (' + dataProgramNew[i].member_ratting + ') </span></span></div><p class="col-xl-12 col-sm-12 col-md-12 col-lg-12 text-right font-weight-bold h4 feeCourse">' + dataProgramNew[i].fee + '</p></div></a></div>')
+                                }
+                            </script>
+                            <script>
+                                $(document).ready(function(){
+                                    $('.slider-nav-program').slick({
+                                        infinite: true,
+                                        slidesToShow: 4,
+                                        slidesToScroll: 2,
+                                        dots: true
+                                    });
+                                });
+                            </script>
+                        </div>
+                        <div class="tab-pane fade col-xl-12 col-sm-12 col-md-12 col-lg-12" id="lineCardCourse" role="tabpanel" aria-labelledby="filterCourse">
+                            <div class="slider slider-nav-new-course"></div>
+                            <script>
+                                for(var i = 0; i < dataCourseNew.length; i++){
+                                    $(".slider-nav-new-course").append('<div class="col-xl-3 col-sm-3 col-md-3 col-lg-3 shadow rounded"><a href="../html/DetailCourse2.html" style="text-decoration: none; color: black"><div class="infoCard"><img src="../img/imgCoursemNew'+ String(i+1) + '.jpg" alt="Course" class="col-xl-12 col-sm-12 col-md-12 col-lg-12 img-fluid"><p class="col-xl-12 col-sm-12 col-md-12 col-lg-12 font-weight-bold titleCourse">'+ dataCourseNew[i].title + '</p><p class="col-xl-12 col-sm-12 col-md-12 col-lg-12 text-muted h6 authorCourse">' + dataCourseNew[i].author +'</p><div class="col-xl-12 col-sm-12 col-md-12 col-lg-12 ratingCourse text-warning"><span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><span class="rating font-weight-bold">' + dataCourseNew[i].quality + '</span><span class="totalRating text-muted h6"> (' + dataCourseNew[i].member_ratting + ') </span></span></div><p class="col-xl-12 col-sm-12 col-md-12 col-lg-12 text-right font-weight-bold h4 feeCourse">' + dataCourseNew[i].fee + '</p></div></a></div>')
+                                }
+                            </script>
+                            <script>
+                                $(document).ready(function(){
+                                    $('.slider-nav-new-course').slick({
+                                        infinite: true,
+                                        slidesToShow: 4,
+                                        slidesToScroll: 2,
+                                        dots: true
+                                    });
+                                });
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bestQualityCourse">
+            <div class="container">
+                <div class="row">
+                    <h2 class="col-xl-12 col-sm-12 col-md-12 col-lg-12 text-left">Best Quality</h2>
+                </div>
+                <div class="row">
+                    <ul class="navFilterCard nav nav-pills mb-3 col-xl-12 col-sm-12 col-md-12 col-lg-12" id="allCategory" role="tablist">
+                        <li class="nav-item">
+                          <a class="nav-link active" id="filterAllBQ" data-toggle="pill" href="#lineCardAllBQ" role="tab" aria-controls="lineCardAllBQ" aria-selected="true"><span class="font-weight-bold text-left">All</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" id="filterProgramBQ" data-toggle="pill" href="#lineCardProgramBQ" role="tab" aria-controls="lineCardProgramBQ" aria-selected="false"><span class="font-weight-bold text-left">Program</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" id="filterCourseBQ" data-toggle="pill" href="#lineCardCourseBQ" role="tab" aria-controls="lineCardCourseBQ" aria-selected="false"><span class="font-weight-bold text-left">Course</span></a>
+                        </li>
+                      </ul>
+                </div>
+                <div class="row">
+                    <div class="navFilterCard tab-content col-xl-12 col-sm-12 col-md-12 col-lg-12" id="pills-tabContent">
+                        <div class="tab-pane fade show active col-xl-12 col-sm-12 col-md-12 col-lg-12" id="lineCardAllBQ" role="tabpanel" aria-labelledby="filterAllBQ">
+                            <div class="slider slider-nav-allBQ"></div>
+                            <script>
+                                for(var i = 0; i < dataBQ.length; i++){
+                                    $(".slider-nav-allBQ").append('<div class="col-xl-3 col-sm-3 col-md-3 col-lg-3 shadow rounded"><a href="../html/DetailCourse2.html" style="text-decoration: none; color: black"><div class="infoCard"><img src="../img/imgBQ'+ String(i+1) + '.jpg" alt="Course" class="col-xl-12 col-sm-12 col-md-12 col-lg-12 img-fluid"><p class="col-xl-12 col-sm-12 col-md-12 col-lg-12 font-weight-bold titleCourse">'+ dataBQ[i].title + '</p><p class="col-xl-12 col-sm-12 col-md-12 col-lg-12 text-muted h6 authorCourse">' + dataBQ[i].author +'</p><div class="col-xl-12 col-sm-12 col-md-12 col-lg-12 ratingCourse text-warning"><span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><span class="rating font-weight-bold">' + dataBQ[i].quality + '</span><span class="totalRating text-muted h6"> (' + dataBQ[i].member_ratting + ') </span></span></div><p class="col-xl-12 col-sm-12 col-md-12 col-lg-12 text-right font-weight-bold h4 feeCourse">' + dataBQ[i].fee + '</p></div></a></div>')
+                                }
+                            </script>
+                            <script>
+                                $(document).ready(function(){
+                                    $('.slider-nav-allBQ').slick({
+                                        infinite: true,
+                                        slidesToShow: 4,
+                                        slidesToScroll: 2,
+                                        dots: true
+                                    });
+                                });
+                            </script>
+                        </div>
+                        <div class="tab-pane fade col-xl-12 col-sm-12 col-md-12 col-lg-12" id="lineCardProgramBQ" role="tabpanel" aria-labelledby="filterProgramBQ">
+                            <div class="slider slider-nav-programBQ"></div>
+                            <script>
+                                for(var i = 0; i < dataProgramBQ.length; i++){
+                                    $(".slider-nav-programBQ").append('<div class="col-xl-3 col-sm-3 col-md-3 col-lg-3 shadow rounded"><a href="../html/DetailCourse2.html" style="text-decoration: none; color: black"><div class="infoCard"><img src="../img/imgProgramBQ'+ String(i+1) + '.jpg" alt="Course" class="col-xl-12 col-sm-12 col-md-12 col-lg-12 img-fluid"><p class="col-xl-12 col-sm-12 col-md-12 col-lg-12 font-weight-bold titleCourse">'+ dataProgramBQ[i].title + '</p><p class="col-xl-12 col-sm-12 col-md-12 col-lg-12 text-muted h6 authorCourse">' + dataProgramBQ[i].author +'</p><div class="col-xl-12 col-sm-12 col-md-12 col-lg-12 ratingCourse text-warning"><span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><span class="rating font-weight-bold">' + dataProgramBQ[i].quality + '</span><span class="totalRating text-muted h6"> (' + dataProgramBQ[i].member_ratting + ') </span></span></div><p class="col-xl-12 col-sm-12 col-md-12 col-lg-12 text-right font-weight-bold h4 feeCourse">' + dataProgramBQ[i].fee + '</p></div></a></div>')
+                                }
+                            </script>
+                            <script>
+                                $(document).ready(function(){
+                                    $('.slider-nav-programBQ').slick({
+                                        infinite: true,
+                                        slidesToShow: 4,
+                                        slidesToScroll: 2,
+                                        dots: true
+                                    });
+                                });
+                            </script>
+                        </div>
+                        <div class="tab-pane fade col-xl-12 col-sm-12 col-md-12 col-lg-12" id="lineCardCourseBQ" role="tabpanel" aria-labelledby="filterCourseBQ">
+                            <div class="slider slider-nav-courseBQ"></div>
+                            <script>
+                                for(var i = 0; i < dataCourseQB.length; i++){
+                                    $(".slider-nav-courseBQ").append('<div class="col-xl-3 col-sm-3 col-md-3 col-lg-3 shadow rounded"><a href="../html/DetailCourse2.html" style="text-decoration: none; color: black"><div class="infoCard"><img src="../img/imgCourseBQ'+ String(i+1) + '.jpg" alt="Course" class="col-xl-12 col-sm-12 col-md-12 col-lg-12 img-fluid"><p class="col-xl-12 col-sm-12 col-md-12 col-lg-12 font-weight-bold titleCourse">'+ dataCourseQB[i].title + '</p><p class="col-xl-12 col-sm-12 col-md-12 col-lg-12 text-muted h6 authorCourse">' + dataCourseQB[i].author +'</p><div class="col-xl-12 col-sm-12 col-md-12 col-lg-12 ratingCourse text-warning"><span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><span class="rating font-weight-bold">' + dataCourseQB[i].quality + '</span><span class="totalRating text-muted h6"> (' + dataCourseQB[i].member_ratting + ') </span></span></div><p class="col-xl-12 col-sm-12 col-md-12 col-lg-12 text-right font-weight-bold h4 feeCourse">' + dataCourseQB[i].fee + '</p></div></a></div>')
+                                }
+                            </script>
+                            <script>
+                                $(document).ready(function(){
+                                    $('.slider-nav-courseBQ').slick({
+                                        infinite: true,
+                                        slidesToShow: 4,
+                                        slidesToScroll: 2,
+                                        dots: true
+                                    });
+                                });
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="studentReview bg-light">
+            <div class="container">
+                <div class="row">
+                    <h3 class="col-xl-12 col-sm-12 col-md-12 col-lg-12 font-weight-bold" style="margin-top: 20px;">What our students have to say</h3>
+                </div>
+                <div class="row">
+                    <div class="col-xl-12 col-sm-12 col-md-12 col-lg-12">
+                        <div class="slider slider-nav-review">
+                        </div>
+                        <script>
+                            for(var i = 0; i < reviewer.length; i++){
+                                $('.slider-nav-review').append('<div class="col-xl-6 col-sm-6 col-md-6 col-lg-6 infoReview shadow rounded bg-white"><div class="row"><span class="col-xl-12 col-sm-12 col-md-12 col-lg-12 text-center"><img src="' + reviewer[i].img + '" alt="user" class="img-fluid rounded-circle mx-auto"><p class="font-weight-bold h5"> ' + reviewer[i].name + '</p><p class="font-italic">' + reviewer[i].work + '</p><p class="text-muted">' + reviewer[i].location + '</p></span></div><hr class="bg-primary" style="width: 50%;"><div class="row"><div class="col-xl-12 col-sm-12 col-md-12"><p style="margin: 15px;">' + reviewer[i].review + '</p></div></div></div>')
+                            }
+                        </script>
+                        <script>
+                            $(document).ready(function(){
+                                $('.slider-nav-review').slick({
+                                    infinite: true,
+                                    slidesToShow: 2,
+                                    slidesToScroll: 2,
+                                    dots: true
+                                });
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="row" id="collabrator">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-12 col-sm-12 col-md-12 col-lg-12">
+                        <marquee scrollamount=15>
+                            <img src="../img/logo_edureka.png" alt="Edureka" class="collabratorLogo img-fluid">
+                            <img src="../img/logo-damsanx.PNG" alt="DamSanX" class="collabratorLogo img-fluid">
+                            <img src="../img/logo_simplilearn.jpg" alt="simplilearn" class="collabratorLogo img-fluid">
+                            <img src="../img/logoCoursera.jpg" alt="logoCoursera" class="collabratorLogo img-fluid">
+                            <img src="../img/logoEDX.jpg" alt="logoEDX" class="collabratorLogo img-fluid">
+                            <img src="../img/Logo_IUH.PNG" alt="Logo_IUH" class="collabratorLogo img-fluid">
+                            <img src="../img/logo-google.png" alt="Logo_GG" class="collabratorLogo img-fluid">
+                            <img src="../img/logoFB.png" alt="Logo_FB" class="collabratorLogo img-fluid">
+                            <img src="../img/logoYT.gif" alt="Logo_YT" class="collabratorLogo img-fluid">
+                        </marquee>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="row" id="row-footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                        <a href="https://www.facebook.com/nguyenloi3108" target="_blank"><img src="../img/Vector.png" alt="facebook"></a>
+                        <a href="https://www.instagram.com/" target="_blank"><img src="../img/Vectorins.png" alt="ins"></a>
+                        <a href="https://twitter.com/" target="_blank"><img src="../img/Vectortwitter.png" alt="tw"></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <p class="col-xl-12 col-sm-12 col-md-12 col-lg-12 text-center h6 text-white">
+                        @2020 All right reserved. <span>Serein Company</span>
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About US</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <!-- JQuery -->
+    <script src="../jquery/jquery-3.5.1.min.js"></script>
+    <!-- JS -->
+    <script src="../js/bootstrap.js"></script>
+	<script src="../js/popper.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js"></script> -->
+    <link rel="stylesheet" href="../fontawesome-free-5.8.2-web/css/all.css">
+    <link href='https://fonts.googleapis.com/css?family=Exo 2' rel='stylesheet'>
+    <link rel="stylesheet" href="../css-owner/aboutUs.css">
+    <script src="../js-owner/aboutUs.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <header class="row shadow">
+            <a href="../html/HomePageSereinSignIn.html" class="col-xl-2 col-sm-2 col-md-2 col-lg-2">
+                <img src="../img/logo.png" alt="Serein" class="img-fluid img-logo-serein" style="margin-left: 15%;">
+            </a>   
+            <div class="col-xl-8 col-sm-8 col-md-8 col-lg-8 input-group barSearch">
+                <div class="input-group-prepend">
+                    <div class="dropdown">
+                        <button class="bg-white dropdown-toggle btn btn-light filterAllCourse border border-dark" type="button" data-toggle="dropdown" id="dropdownType" aria-haspopup="true" aria-expanded="false">
+                            Type
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownType">
+                            <li class="dropdown-item">
+                                <a href="#">All</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="#">Program</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="#">Course</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <input type="text" placeholder="Search" class="form-control txtSearch border border-top border-bottom border-dark" aria-label="seach">
+                <div class="input-group-append">
+                    <button class="bg-white input-group-text btnSearch border border-dark">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="col-xl-2 col-sm-2 col-md-2 col-lg-2">
+                <nav class="nav">
+                    <div class="nav-item">
+                        <a href="../html/HomePageSereinSignIn.html" class="nav-link h6">Home</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="../html/aboutUsSignIn.html" class="nav-link active h6">Abouts</a>
+                    </div>
+                    <button class="btnDN">
+                        <a href="../html/AccountUser.html" class="text-white" style="text-decoration: none; outline: none;">
+                            Duy
+                            <span>
+                                <i class="fa fa-user-alt"></i>
+                            </span>
+                        </a>
+                    </button>
+                </nav>
+            </div>
+        </header>
+        <div class="row" id="introduce">
+            <div class="col-xl-12 col-md-12 col-sm-12 col-lg-12">
+                <h3>Introduce</h3><br>The Serein website is a collection of data about online courses from various sources, such as Edx, Coursera, ... We provide you with the most objective information about the courses so that you can search and evaluate the overview to choose the course that suits you.
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12">
+                <h4>Author</h4>
+            </div>
+            <div class="col-xs-6 col-md-6 col-sm-6 col-lg-6 text-center">                
+                <img src="../img/admin.jpg" alt="user" class="img-fluid rounded-circle mx-auto" style="height: 270px;width: 270px;">
+                <p class="font-weight-bold h5"> Nguyễn Tấn Lợi</p>
+                <p class="font-weight-bold h6">17101691</p>
+            </div>
+            <div class="col-xs-6 col-md-6 col-sm-6 col-lg-6 text-center">
+                <img src="../img/admin2.jpg" alt="user" class="img-fluid rounded-circle mx-auto"style="height: 270px;width: 270px;">
+                <p class="font-weight-bold h5"> Trấn Tấn Thành</p>
+                <p class="font-weight-bold h6">17101691</p>
+            </div>
+        </div>
+        <div class="row" id="contatUS">
+            <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
+                Contact Us<br>We are always ready to hear from you!
+            </div>
+            <div class="col-xs-3 col-md-3 col-sm-3 col-lg-3"></div>
+            <div class="col-xs-6 col-md-6 col-sm-6 col-lg-6">
+                <form class="horizontal-form" id="formDK">
+                    <div class="form-group">
+                        <label class="label-control col-sm-12 col-md-12 col-lg-12">Full Name</label>
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                            <input type="text" id="txtTen" onblur="checkName()" class="form-control" placeholder="Name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="label-control col-sm-12 col-md-12 col-lg-12">Email</label>
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                            <input type="text" id="txtEmail" onblur="checkEmail()" class="form-control" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="label-control col-sm-12 col-md-12 col-lg-12">Comment</label>
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                            <textarea rows="4" cols="76" class="form-control"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">                                        
+                        <div class="col-sm-8 col-md-8 col-lg-8">
+                            <input type="button" id="btnSubmit" value="Submit" >
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-xs-3 col-md-3 col-sm-3 col-lg-3"></div>
+        </div>        
+        <footer class="row" id="row-footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                        <a href="https://www.facebook.com/nguyenloi3108" target="_blank"><img src="../img/Vector.png" alt="facebook"></a>
+                        <a href="https://www.instagram.com/" target="_blank"><img src="../img/Vectorins.png" alt="ins"></a>
+                        <a href="https://twitter.com/" target="_blank"><img src="../img/Vectortwitter.png" alt="tw"></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <p class="col-xl-12 col-sm-12 col-md-12 col-lg-12 text-center h6 text-white">
+                        @2020 All right reserved. <span>Serein Company</span>
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
